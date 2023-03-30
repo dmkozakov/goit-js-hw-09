@@ -1,0 +1,52 @@
+body {
+  background-color: #242b3d;
+  color: antiquewhite;
+}
+
+.timer-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.datepicker-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input {
+  width: 260px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.btn {
+  width: 80px;
+  height: 40px;
+  text-transform: uppercase;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 48px;
+}
