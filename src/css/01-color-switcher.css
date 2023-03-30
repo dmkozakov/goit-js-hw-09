@@ -1,0 +1,23 @@
+.btn-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+
+  border-radius: 4px;
+  text-transform: uppercase;
+
+  color: #f1fff9;
+  background-color: #625df590;
+
+  box-shadow: 5px 15px 30px 1px rgba(0, 0, 0, 0.28);
+}
+
+.btn[disabled] {
+  background-color: #625df540;
+}
