@@ -4,6 +4,10 @@ require("flatpickr/dist/themes/material_blue.css");
 import { Notify } from "notiflix/build/notiflix-notify-aio";
 import "notiflix/dist/notiflix-3.2.6.min.css";
 
+Notify.init({
+  position: "center-top",
+});
+
 const refs = {
   startBtn: document.querySelector("[data-start]"),
   dataDays: document.querySelector("[data-days]"),
@@ -25,9 +29,7 @@ flatpickr("#datetime-picker", {
     const selectedDate = selectedDates[0].getTime();
     if (selectedDate <= Date.now()) {
       refs.startBtn.disabled = true;
-      Notify.failure("Please choose a date in the future", {
-        position: "center-top",
-      });
+      Notify.failure("Please choose a date in the future");
       return;
     }
 
@@ -53,9 +55,7 @@ flatpickr("#datetime-picker", {
 
           if (deltaTime < 10) {
             clearInterval(intervalId);
-            Notify.success("You've reached a goal!", {
-              position: "center-top",
-            });
+            Notify.success("You've reached a goal!");
             return;
           }
 

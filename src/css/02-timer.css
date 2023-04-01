@@ -24,12 +24,15 @@ body {
 .input {
   width: 260px;
   height: 40px;
+
   font-size: 20px;
+  text-align: center;
 }
 
 .btn {
   width: 80px;
   height: 40px;
+
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
